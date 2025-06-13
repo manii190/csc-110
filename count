@@ -1,0 +1,9 @@
+def count_vowels(string):
+    index = 0
+    count = 0
+    while index <len(string):
+        char = string[index]
+        if char in "aeiou":
+            char += 1
+            return count
+

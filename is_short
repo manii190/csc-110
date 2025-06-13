@@ -1,0 +1,10 @@
+def is_short():
+    string=input("enter the string")
+    if len(string) < 10:
+        print("that's short!")
+    elif len(string)==10:
+        print("ITS 10")
+    elif len(string) > 10:
+        print("that's long!")
+
+is_short()

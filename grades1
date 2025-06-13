@@ -1,0 +1,41 @@
+def letter_grade(percentage):
+    
+    '''
+    This function uses if, elif and else statements to
+    check the percentage values and return a grade.
+
+    Args:
+        percentage: the percentage to be checked.
+    Returns:
+        The grade according to the percentage received.
+    '''
+    
+    # checks if percentage is less than zero or exceeds one hundred percent.
+    if percentage < 0 or percentage > 100:
+        return 'X'
+    
+    # checks if percentage is greater than or equal to ninety percent.
+    elif percentage >= 90:
+        return 'A'
+    
+    # checks if percentage is greater than or equal to eighty percent.
+    elif percentage >= 80:
+        return 'B'
+    
+    # checks if percentage is greater than or equal to seventy percent.
+    elif percentage >= 70:
+        return 'C'
+    
+    # checks if percentage is greater than or equal to sixty percent.
+    elif percentage >= 60:
+        return 'D'
+    
+    # checks if percentage is lesser than sixty percent
+    # or greater than or equal to zero percent.
+    elif percentage < 60 and percentage >= 0:
+        return 'E'
+    
+    # checks for any other unexpected case
+    else:
+        return 'X'
+    

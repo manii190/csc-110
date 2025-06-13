@@ -1,0 +1,34 @@
+def range_of_three(x, y, z):
+  '''
+  This function calculates the difference between the highest
+  and lowest out of three numbers
+  Args:
+    x, y, z: float or integer numbers
+  Returns
+    A float or integer with the difference between the highest
+    and lowest arguments
+  '''
+  # assume x is the max
+  max = x
+  # is y actually the max?
+  if y > max:
+    max = y
+  # is z the max?
+  if z > max:
+    max = z
+
+  # assume x is the min
+  min = x
+  # is y actually the min?
+  if y < min:
+    min = y
+  # is z the min?
+  if z < min:
+    min = z
+
+  # return the difference between the two values
+  return max - min
+
+
+
+print(range_of_three(3, 2, 8))

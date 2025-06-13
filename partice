@@ -1,0 +1,39 @@
+"""
+def max_lists(numbers):
+    maxi = None
+    for i in range(len(numbers)):
+        for j in range(len(numbers[i])):
+                if maxi == None or numbers[i][j] > max_lists:
+                    max_lists = numbers[i][j]
+    return maxi
+
+print(max_lists(([[], []])))
+"""
+"""
+def concatenate_lists(strings_a,strings_b):
+    new_lists=[]
+    for i in range(min(len(strings_a),len(strings_b))):
+        new_lists.append(strings_a[i]+strings_b[i])
+    if len(strings_a)<len(strings_b):
+        return new_lists + strings_b[len(strings_a):]
+    else:
+        return new_lists + strings_a[len(strings_b):]
+print(concatenate_lists([12,3,213,12,3,123],[3,123,12312,3,13,75]))
+"""
+"""
+def remove_middle(list):
+    if len(list)>0:
+        if len(list)%2==0:
+            middle=len(list)/2
+            list.remove(middle)
+        else:
+            middle=(len(list)-1)/2
+            print(middle)
+            print(int(middle))
+            list.pop(int(middle)+1)
+    return list
+print(remove_middle([1,2,3,4,5]))
+"""
+text="how are you"
+x="-".join(text).upper(text)
+print(x)

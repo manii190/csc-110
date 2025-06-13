@@ -1,0 +1,12 @@
+def counting():
+    firstnumber=int(input("enter the first number"))
+    secondnumber=int(input("enter the second number"))
+    i =firstnumber
+    while i < secondnumber+1:
+        print(i)
+        i += 1
+counting()
+
+
+
+

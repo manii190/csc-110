@@ -1,0 +1,5 @@
+def _input():
+    word=input("enter the string")
+    print(word)
+    print(word)
+print(_input())
